@@ -21,3 +21,14 @@ _To revise basics of django._
 - Project App : Views
 - Project App : Templates
 
+**Blog**<br>
+
+- Blog App : Model
+- Blog App : Django-Admin
+- Blog App : Views
+- Blog App : Templates
+  
+**Conclusion**
+
+
+>Important topics<br>
