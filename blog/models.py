@@ -6,6 +6,6 @@ class Category(models.Model): #To define category of each blog
 class Post(models.Model): #To define each blog posts
     title = models.CharField(max_length = 255)
     content = models.TextField()
-    created_on = models.DateTimeField(auto_now_add = True)
-    last_modified = models.DateTimeField(auto_now= True)
+    created_on = models.DateTimeField(auto_now_add = True) #whenever instance of class is created
+    last_modified = models.DateTimeField(auto_now = True) #whenever instance of class is saved
     categories = models.ManyToManyField('Category', related_name = 'posts')
