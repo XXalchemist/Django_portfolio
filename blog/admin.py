@@ -1,3 +1,15 @@
 from django.contrib import admin
-
+from blog.moodels import Post, Category, Comment
 # Register your models here.
+
+class PostAdmin(admin.ModelAdmin):
+    pass
+
+class CategoryAdmin(admin.ModelAdmin):
+    pass
+
+admin.site.register(Post, PostAdmin)
+admin.site.register(Category, CategoryAdmin)
+
+# We don't add comment to the django admin because we don't edit others person comment
+
