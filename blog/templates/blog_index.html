@@ -16,7 +16,7 @@
         {% endfor %}
 
     </small>
-    <p> {{ post.content | slice: '400' }}.....</p>
+    <p> {{ post.content | slice:":400" }}.....</p>
     {% endfor %}
 </div>
 {% endblock %}
