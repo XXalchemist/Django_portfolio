@@ -5,12 +5,12 @@
     <h1>Blogs That Were Written By Some Daunting Persons</h1>
     <hr>
     {% for post in posts %}
-    <h2><a href="{% url 'blog_detail' post.pk %}">{{ post.title }}</a></h2>
+    <h2 class ='text-info'><a href="{% url 'blog_detail' post.pk %}">{{ post.title }}</a></h2>
     <small>
         {{ post.created_on.date }} |&nbsp;
         Categories : &nbsp;
         {% for category in post.categories.all %}
-        <a href="{% url 'blog_category' category.name %}">
+        <a href="{% url 'blog_category' category.name %}" class = 'text-warning'>
             {{ category.name }}
         </a>&nbsp;
         {% endfor %}
