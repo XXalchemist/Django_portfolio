@@ -11,4 +11,16 @@ def blog_index(request):
     }
     return render(request, "blog_index.html", context)
 
-    
+def blog_category(request):
+    posts = Post.objects.filter(
+        catgories__name__contains = category
+    ).order_by(
+        '-created_on'
+    )
+
+    context = {
+        'category': category,
+        'posts' : posts
+    }
+
+    return render (request, "blog_category.html", context)
