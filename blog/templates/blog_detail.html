@@ -24,4 +24,15 @@
         </div>
         <button type = 'submit' class = 'btn btn-primary'>Submit</button>
     </form>
+    <h3>Comment :* </h3>
+    <hr>
+    {% for comment in comments %}
+    <p>
+        On {{ comment.created_on.date }}&nbsp;
+        <b class='text-info'>{{ comment.author }}</b> wrote: 
+    </p>
+    <p>{{ comment.body }}</p>
+    <hr>
+    {% endfor %}
 </div>
+{% endblock %}
