@@ -14,5 +14,5 @@ class Comment(models.Model):
     author = models.CharField(max_length = 60)
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add = True)
-    post = models.ForeignKey('Post', on_delete = models.CASCADE)
+    post = models.ForeignKey('Post', on_delete = models.CASCADE) # Define as many to one relationship i.e many comments can be assigned to one post but we can't have comment that corresponds to many posts.
     

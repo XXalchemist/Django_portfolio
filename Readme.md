@@ -7,6 +7,19 @@ _To revise basics of django._
 2) Blog app : _to create,update,delete blog entry_.
 
 ---
+### Screenshots of Project ####
+
+**Project Showcase**
+![Project-showcase](portfolio/static/img/p_1.png) Project Index 
+![Project-showcase](portfolio/static/img/p_2.png) Project Detail
+
+**Blog**
+![Blog-app](portfolio/static/img/p_3.png)  Blog Index
+![Blog-app](portfolio/static/img/categories.png) Blog Categories
+![Blog-app](portfolio/static/img/comment.png) Blog Comment
+
+---
+
 ###  This Project includes following topics :- ###
 **Brief Intro**<br>
 
